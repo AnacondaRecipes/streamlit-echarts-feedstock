@@ -1,0 +1,45 @@
+{% set name = "streamlit-echarts" %}
+{% set version = "0.4.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/streamlit-echarts-{{ version }}.tar.gz
+  sha256: 33cc5329b99ddce8b64ce6c4607733e02db575c379af6394a8c78ae5df14934d
+
+build:
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+  skip: true  # [py<36]
+
+requirements:
+  host:
+    - python
+    - pip
+    - setuptools
+    - wheel
+  run:
+    - python
+    - streamlit >=0.63
+    - simplejson >=3.0
+    - pyecharts >=1.9
+
+test:
+  imports:
+    - streamlit_echarts
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://github.com/andfanilo/streamlit-echarts
+  summary: Echarts custom component for Streamlit
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - AddYourGitHubIdHere
