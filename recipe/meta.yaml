@@ -37,6 +37,8 @@ test:
 about:
   home: https://github.com/andfanilo/streamlit-echarts
   summary: Echarts custom component for Streamlit
+  description: |
+      A Streamlit component to display ECharts.
   license: MIT
   license_file: LICENSE
   license_family: MIT
