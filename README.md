@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](LICENSE)
 
 Home: https://github.com/andfanilo/streamlit-echarts
 
-Package license: BSD 3-Clause License
+Package license: MIT
 
 Summary: Echarts custom component for Streamlit
 

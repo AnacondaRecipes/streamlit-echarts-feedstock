@@ -40,7 +40,7 @@ about:
   description: |
       A Streamlit component to display ECharts.
   license: MIT
-  license_file: LICENSE
+  license_file: {{ RECIPE_DIR }}/LICENSE
   license_family: MIT
   dev_url: https://github.com/andfanilo/streamlit-echarts
   doc_url: https://github.com/andfanilo/streamlit-echarts/blob/develop/README.md
